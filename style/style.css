@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  --margin-main: 1rem;
+  --gap-main: 2rem;
+  --padding-main: 1rem;
+}
+.navBar {
+  background-color: whitesmoke;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-main);
+}
+.right {
+  display: flex;
+  gap: var(--gap-main);
+}
+.buttom {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-main);
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-main);
+}
