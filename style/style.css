@@ -6,6 +6,18 @@
   --margin-main: 1rem;
   --gap-main: 2rem;
   --padding-main: 1rem;
+
+  /* font vars */
+  --font-size-main: 20px;
+  --font-size-headers: 25px;
+  --font-weight-main: 400;
+  --font-weight-simi: 600;
+  --font-weight-bold: 800;
+}
+.main {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-main);
 }
 .navBar {
   background-color: whitesmoke;
@@ -38,5 +50,33 @@
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 200px 1fr;
-  height: 100vh;
+  min-height: 100vh;
+}
+.dashboard {
+  margin-top: var(--margin-main);
+  margin-left: var(--margin-main);
+  display: flex;
+  gap: calc(var(--gap-main) / 2);
+  align-items: center;
+  font-size: var(--font-size-headers);
+  font-weight: var(--font-weight-bold);
+}
+.sidBar-options {
+  display: flex;
+  flex-direction: column;
+  margin: var(--margin-main);
+  gap: var(--gap-main);
+}
+ul {
+  list-style: none;
+}
+.liItem {
+  display: flex;
+  gap: calc(var(--gap-main) / 2);
+  align-items: center;
+  font-weight: var(--font-weight-simi);
+  padding-top: 10px;
+}
+.liItem i {
+  width: 20px;
 }
